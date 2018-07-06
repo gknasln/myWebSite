@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Yeni item ekle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <h1>Yeni eleman ekleme</h1>
+  <form method="post" action="131892.php">
+    <p>Dosya ismi</p>
+    <input type="text" name="name" id="name-field" required minlength="1" maxlength="100">
+    <p>Dosya açıklaması</p>
+    <input type="text" name="description" id="description-field" required minlength="1" maxlength="200">
+    <p>Sınıf</p>
+    <input type="text" name="class" id="class-field" required minlength="1" maxlength="100">
+    <p>İçerik</p>
+    <textarea type="textarea" name="content" id="content-field" required> </textarea>
+    <input type="submit" value="Kaydet" id="submit-button" required >
+  </form>
+</body>
+<script src="main.js"></script>
+</html>

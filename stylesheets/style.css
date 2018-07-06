@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+}
+
+header{
+    height: 6rem;
+    background-color: aquamarine;
+}
+
+header h1{
+    text-align: left;
+    padding: 10px 0  0 30px;
+    margin: 0px;
+}
+
+header #lastName{
+    margin: -10px 0 0 90px;
+}
+
+
+

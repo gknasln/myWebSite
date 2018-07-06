@@ -1,0 +1,114 @@
+*{
+  font-family: 'Roboto';
+}
+
+body{
+  background: rgb(240, 240, 240);
+} 
+
+::-webkit-scrollbar-track d{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+  border-radius: 10px;
+  background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(240, 240, 240);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg,
+  transparent,
+  rgba(0, 0, 0, 0.3) 40%,
+  transparent,
+  transparent)
+}
+
+.content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 60px; 
+  margin: 0 auto 6px auto;
+  border-radius: 7px;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-bottom: 3px solid rgb(34, 34, 34);
+  border-right: 3px solid rgb(34, 34, 34);
+  background: linear-gradient(rgb(224, 224, 224), rgb(243, 242, 242),white, rgb(243, 242, 242),rgb(224, 224, 224));
+  cursor: pointer;
+  position: relative;
+}
+
+#item-name, #item-description{
+  font-size: 1rem;
+}
+
+
+.content:hover{
+  background: linear-gradient(rgb(204, 204, 204), rgb(233, 232, 232),white, rgb(233, 232, 232), rgb(204, 204, 204));
+}
+
+.content:active{
+  background: linear-gradient( rgb(233, 232, 232), rgb(214, 214, 214),  rgb(233, 232, 233));
+}
+
+.content span::selection{
+  background: none;
+}
+
+.content #item-name{
+  text-align: left;
+  padding-left: 20px; 
+  width: 20%; 
+}
+
+.content hr{
+  height: 30px;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  color: gray;
+}
+.content #item-description{ 
+  width: 65%;
+  text-align: left;
+}
+
+
+.content #item-class{  
+  font-size: 14 px;
+  font-style: italic;
+  padding-right: 20px;
+  color: rgb(83, 83, 83); 
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+
+  #item-name{
+    min-width: 95%;
+    font-size: 0.9rem;
+  }
+
+  #item-description{
+    display: none;
+  }
+  
+  hr{
+    display: none;
+  }
+
+  #item-class{
+    font-size: 0.6rem;
+    bottom: -5px;
+  }
+
+
+}
