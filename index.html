@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./stylesheets/navStyle.css">
+<link rel="stylesheet" href="./stylesheets/style.css">
+<style>
+
+</style>
+</head>
+<body>
+
+    <header>
+            <h1>Gökhan </h1>
+            <h1 id="lastName">Aslan</h1> 
+    </header>
+
+<nav class="desktop-nav">
+  <a href="./index.html">Ana Sayfa</a>
+
+  <div class="dropdown notes">
+    <button class="dropbtn notes">Notlar &nbsp;<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="./javaNotes/" id="java-content">Java</a> 
+      <!-- <a href="#" id="c-content">C</a> -->
+    </div>
+  </div> 
+  
+  
+
+  <a style="float: right" href="./contact/">İletişim</a>
+</nav>
+
+<!-- ||||||||||||||||||||| right modal| |||||||||||||||||||||||||||||| -->
+<div id="panel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <button class="mobile-dropdown-button notes">Notlar &nbsp;
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class= "mobile-dropdown-container">
+    <a id="java-notes" href="./javaNotes/" >Java</a>
+    <!-- <a id="c-notes" >C</a> -->
+  </div>
+</div> 
+
+
+<!--  ||||||||||||||||||||||||||| Mobile Nav Menu ||||||||||||||||||||||||||||||||||||  -->
+<div class="mobile-nav" >
+  <button id="mobile-show-button" onclick="openNav()" >
+    <img src="./icons/menu.png">
+  </button>
+  <button id="mobile-home-button"> 
+    <a href="index.html">
+      <img src="./icons/home.png">
+    </a>
+  </button>
+  <a href="./contact" id="mobile-contact">İletişim</a>
+  </div>
+
+
+<h2 style="padding-left:30px">Bu site henüz yapım aşamasındadır...</h2>
+
+   <script src="javascript/navScript.js"></script>
+</body>
+</html>
+

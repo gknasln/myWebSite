@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>İletişim - Gökhan Aslan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./../stylesheets/navStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+</head>
+<body>
+  
+  
+<nav class="desktop-nav">
+    <a href="./../index.html">Ana Sayfa</a>
+  
+    <div class="dropdown notes">
+      <button class="dropbtn notes">Notlar &nbsp; <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="./../javaNotes/" id="java-content">Java</a> 
+        <!-- <a href="#" id="c-content">C</a> -->
+      </div>
+    </div> 
+    
+    
+  
+    <a style="float: right" href="./index.html">İletişim</a>
+  </nav>
+  
+  <!-- ||||||||||||||||||||| right modal| |||||||||||||||||||||||||||||| -->
+  <div id="panel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button class="mobile-dropdown-button notes">Notlar &nbsp;
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class= "mobile-dropdown-container">
+      <a id="java-notes" href="./../javaNotes/" >Java</a>
+      <!-- <a id="c-notes" >C</a> -->
+    </div>
+  </div> 
+  
+  
+  <!--  ||||||||||||||||||||||||||| Mobile Nav Menu ||||||||||||||||||||||||||||||||||||  -->
+  <div class="mobile-nav" >
+    <button id="mobile-show-button" onclick="openNav()" >
+      <img src="./../icons/menu.png">
+    </button>
+    <button id="mobile-home-button"> 
+      <a href="./../index.html">
+        <img src="./../icons/home.png">
+      </a>
+    </button>
+    <a href="./index.html" id="mobile-contact">İletişim</a>
+    </div>
+  
+    <h3>İletişim bilgileri</h3>
+    <form action="">
+      
+    </form>
+    <script src="./../javascript/navScript.js"></script>
+</body>
+</html>

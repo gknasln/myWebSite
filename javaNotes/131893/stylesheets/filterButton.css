@@ -1,0 +1,102 @@
+.filter-button{
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right bottom, lightgray, white, lightgray); 
+  border-width: 1px;
+  position: relative;
+  outline: none;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+.filter-button:hover{
+  background: linear-gradient(to right bottom, rgb(194, 194, 194), white, rgb(194, 194, 194)); 
+}
+
+.filter-button div{
+  width: 40%;
+  background: black;
+  position: absolute;
+  transition: top 0.5s, transform 0.5s, width 0.5s;
+}
+
+#first-left{
+  height: 1px;
+  top: 30%;
+  left: 13%;
+  transform: rotate(30deg);  
+  border-radius: 0 50% 50% 0;
+}
+
+#first-right{
+  height: 1px;
+  top: 30%;
+  right: 14%;
+  transform: rotate(-30deg);
+}
+
+#second-left{
+  height: 2px;
+  top: 50%;
+  left: 13%;
+  transform: rotate(30deg);
+  border-radius: 50% 0 0 50%;
+}
+
+#second-right{
+  height: 2px;
+  top: 50%;
+  right: 14%;
+  transform: rotate(-30deg);
+  border-radius: 0 50% 50% 0;
+}
+
+#third-left{
+  height: 3px;
+  top: 70%;
+  left: 13%;
+  transform: rotate(30deg);
+  border-radius: 50% 0 0 50%;
+  transform-origin: 50% 50%;
+}
+
+#third-right{
+  height: 3px;
+  top: 70%;
+  right: 14%;
+  transform: rotate(-30deg);
+  border-radius: 0 50% 50% 0;
+  transform-origin: 50% 50%;
+}
+
+.hover #first-left, 
+.hover #first-right, 
+.hover #third-left, 
+.hover #third-right{
+  top: 50%;
+}
+
+.hide #first-left,
+.hide #first-right, 
+.hide #second-left, 
+.hide #second-right{
+  opacity: 0;
+}
+
+.active #third-left, 
+.active #third-right{
+  top: 50%;
+}
+
+.active #third-left{
+  width: 80%;
+  border-radius: 0;
+  transform: rotate(48deg);
+}
+
+.active #third-right{
+  width: 77%;
+  border-radius: 0;
+  transform: rotate(-48deg)
+    translate(1px, 1px);
+}

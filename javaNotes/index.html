@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" >
+  <title>Java Notları - Gökhan Aslan</title>
+  <link rel="icon" href="./icons/java-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./../stylesheets/navStyle.css">
+  <link rel="stylesheet" href="./stylesheets/javaNotes.css">
+  <link rel="stylesheet" href="./stylesheets/filterButton.css">
+</head>
+  <body>
+    
+   
+<nav class="desktop-nav">
+    <a href="./../index.html">Ana Sayfa</a>
+  
+    <div class="dropdown notes">
+      <button class="dropbtn notes">Notlar  <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="./index.html" id="java-content">Java</a> 
+        <!-- <a href="#" id="c-content">C</a> -->
+      </div>
+    </div> 
+    
+    
+  
+    <a style="float: right" href="./../contact/">İletişim</a>
+  </nav>
+  
+  <!-- ||||||||||||||||||||| right modal| |||||||||||||||||||||||||||||| -->
+  <div id="panel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <button class="mobile-dropdown-button notes">Notlar  
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class= "mobile-dropdown-container">
+      <a id="java-notes" href="./index.html" >Java</a>
+      <!-- <a id="c-notes" >C</a> -->
+    </div>
+  </div> 
+  
+  
+  <!--  ||||||||||||||||||||||||||| Mobile Nav Menu ||||||||||||||||||||||||||||||||||||  -->
+  <div class="mobile-nav" >
+    <button id="mobile-show-button" onclick="openNav()" >
+      <img src="./../menu.png">
+    </button>
+    <button id="mobile-home-button"> 
+      <a href="./../index.html">
+        <img src="./../home.png">
+      </a>
+    </button>
+      <a href="./../contact" id="mobile-contact">İletişim</a>
+    </div>
+  
+    <section>
+      <div class="text-container">
+          <input type="text" placeholder="Aramak istediğiniz konuyu buraya giriniz...">
+          <button class="filter-button">
+            <div id="first-left"></div>
+            <div id="first-right"></div>
+            <div id="second-left"></div>
+            <div id="second-right"></div>
+            <div id="third-left"></div>
+            <div id="third-right"></div>
+          </button> 
+      </div>
+      <div class="filter-panel">
+        <span style="margin-right: 30px;">Şurda ara :</span>
+        <input type="checkbox"  id="search-at-name" checked>
+        <label for="search-at-name">isim / açıklama</label>
+        <input type="checkbox" id="search-at-class" checked> 
+        <label for="search-at-class">sınıf</label>
+      </div>
+    <div class="outside">
+      <iframe class="center" src="./emptyPage.html"></iframe>
+  </div>  
+  </section>
+
+  <script src="./javascript/javaNotes.js"></script>
+  <script src="./javascript/filterButton.js"></script>
+  <script src="./../javascript/navScript.js"></script>
+  </body>
+</html>

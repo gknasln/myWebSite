@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" >
+  <title>Java Notları Düzenleme - Gökhan Aslan</title>
+  <link rel="icon" href="./icons/java-logo.png">
+  <link rel="stylesheet" href="./stylesheets/javaNotes.css">
+  <link rel="stylesheet" href="./stylesheets/filterButton.css">
+</head>
+  <body>  
+    <section>
+      <div class="text-container">
+          <input type="text" placeholder="Aramak istediğiniz konuyu buraya giriniz...">
+          <button class="filter-button">
+            <div id="first-left"></div>
+            <div id="first-right"></div>
+            <div id="second-left"></div>
+            <div id="second-right"></div>
+            <div id="third-left"></div>
+            <div id="third-right"></div>
+          </button> 
+      </div>
+      <div class="filter-panel">
+        <span style="margin-right: 30px;">Şurda ara :</span>
+        <input type="checkbox"  id="search-at-name" checked>
+        <label for="search-at-name">isim / açıklama</label>
+        <input type="checkbox" id="search-at-class" checked> 
+        <label for="search-at-class">sınıf</label>
+      </div>
+    <div class="outside">
+      <iframe class="center" src="./emptyPage.html"></iframe>
+  </div>  
+  </section>
+
+  <script src="./javascript/javaNotes.js"></script>
+  <script src="./javascript/filterButton.js"></script>
+  <script src="./../javascript/navScript.js"></script>
+  </body>
+</html>

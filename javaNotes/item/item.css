@@ -1,0 +1,48 @@
+body{
+  background: rgb(240,240,240);
+}
+h1{
+  color: #bf0707;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content{
+  width: 60%;
+  white-space: pre-wrap; 
+  line-height: 22px;
+}
+
+code{
+  display: block;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+code span{
+  border: none;
+}
+
+red{
+  color: #bf0707;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  #content{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #content{
+    width: 90%;
+  }
+}
