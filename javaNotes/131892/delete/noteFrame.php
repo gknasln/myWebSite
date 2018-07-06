@@ -54,7 +54,11 @@
       OR description LIKE '%{$key}%'
       OR class LIKE '%{$key}%'");
     }
- 
+
+    // echo mysql_num_rows($result);
+    // if( sizeof(mysql_num_rows($result)) == 0){
+      
+    // } 
     if($result != ""){
     }
     
@@ -68,7 +72,7 @@
       }
       while ($row = mysqli_fetch_array($result)){
         echo "
-          <form style='width: 100%' method='post' action='./item/index.php' target='_blank'>
+          <form style='width: 100%' method='post' action='./ask.php'>
             <button class='content' name='id' value=" . $row['id'] . " >
               <span id='item-name'> " .  $row['name'] . " </span> 
               <hr/>

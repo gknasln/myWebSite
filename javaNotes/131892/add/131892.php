@@ -27,9 +27,12 @@ if($message !== "true"){
     die($message);
 }
 
-$servername = "185.216.113.35";
-$username = "gknasln";
-$password = "Gkndb3345";
+// $servername = "185.216.113.35";
+$servername = "localhost";
+// $username = "gknasln";
+$username = "root";
+// $password = "Gkndb3345";
+$password = "";
 $dbname = "notes";
 
 // Create connection
@@ -47,7 +50,7 @@ AND TABLE_NAME = "java"
 
 $nextId = implode(",",$result->fetch_assoc()); 
 
-$myfile = fopen("./../files/$nextId.txt", "w") or die("unable to open file!");
+$myfile = fopen("./../../files/$nextId.txt", "w") or die("unable to open file!");
 fwrite($myfile, $content);
 fclose($myfile);
 
@@ -55,19 +58,20 @@ $sql = "INSERT INTO `java` (`id`, `name`, `description`, `class`, `path`)
     VALUES (NULL, '$name', '$description', '$class', 'files/$nextId.txt')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "Yeni konu ekleme başarılı! <br>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 } 
 
 $conn->close();
 
-// redirect('131892.html');
+// redirect();
 
-function redirect($url) {
+function redirect() {
     ob_start();
-    header('Location: '.$url);
+    header('Location: ' . "index.html");
     ob_end_flush();
     die();
   }
 ?>
+ 

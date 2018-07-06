@@ -47,7 +47,5 @@
       </div>
     </div>
 </body>
-<script src="item.js"> 
-  // document.querySelector('#content').innerHTML = message;
-</script>
+<script src="item.js"></script>
 </html>

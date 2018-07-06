@@ -41,11 +41,14 @@ if(isset($_POST['content']) && $_POST['content'] !== ''){
 if($validate != ""){
   die($validate);
 }
+  
+$myfile = fopen("./../../files/$id.txt", "w") or die("Unable to open file!"); 
+fwrite($myfile, $content);  
+fclose($myfile);
+ 
 
-
-/*
 $servername = "localhost";
-$username = "username";
+$username = "root";
 $password = "";
 $dbname = "notes";
 
@@ -56,13 +59,22 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "UPDATE java SET lastname='Doe' WHERE id=2";
+$sql = "UPDATE java SET name='$name', description='$description', class='$class' WHERE id=$id";
 
-// if ($conn->query($sql) === TRUE) {
-//     echo "Record updated successfully";
-// } else {
-//     echo "Error updating record: " . $conn->error;
-// }
+if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+} else {
+    echo "Error updating record: " . $conn->error;
+}
 
-$conn->close();*/
+redirect("index.html");
+
+$conn->close(); 
+
+function redirect($url) {
+  ob_start();
+  header('Location: '.$url);
+  ob_end_flush();
+  die();
+}
 ?>

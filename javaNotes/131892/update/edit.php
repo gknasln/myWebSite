@@ -34,8 +34,8 @@
 
     $row = mysqli_fetch_array($result);
 
-    $myfile = fopen("./../" . $row['path'], "r") or die("Unable to open file!");
-    $content =  fread($myfile,filesize("./../" . $row['path']));
+    $myfile = fopen("./../../" . $row['path'], "r") or die("Unable to open file!");
+    $content =  fread($myfile,filesize("./../../" . $row['path']));
     fclose($myfile);
 
     $conn->close();
