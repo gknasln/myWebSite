@@ -44,13 +44,13 @@
   <form method="post" action="update.php">
     <input type="text" name="id" value="<?php echo $id ?>" style="display: none;">
     <p>Dosya ismi</p>
-    <input type="text" name="name" id="name-field" value="<?php echo $row['name'] ?>" required minlength="1" maxlength="100">
+    <input type="text" name="name" id="name-field" value="<?php echo $row['name'] ?>" required minlength="1" maxlength="100" autocomplete="off">
     <p>Dosya açıklaması</p>
-    <input type="text" name="description" id="description-field" value="<?php echo $row['description'] ?>" required minlength="1" maxlength="200">
+    <input type="text" name="description" id="description-field" value="<?php echo $row['description'] ?>" required minlength="1" maxlength="200" autocomplete="off">
     <p>Sınıf</p>
-    <input type="text" name="class" id="class-field" value="<?php echo $row['class'] ?>" required minlength="1" maxlength="100">
+    <input type="text" name="class" id="class-field" value="<?php echo $row['class'] ?>" required minlength="1" maxlength="100" autocomplete="off">
     <p>İçerik</p>
-    <textarea type="textarea" name="content" id="content-field" required> <?php echo $content ?> </textarea>
+    <textarea type="textarea" name="content" id="content-field" required autocomplete="off"> <?php echo $content ?> </textarea>
     <input type="submit" value="Güncelle" id="submit-button" required >
   </form> 
 
