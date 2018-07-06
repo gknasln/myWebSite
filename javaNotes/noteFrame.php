@@ -10,9 +10,9 @@
 <body>
   <?php
 
-    $servername = "185.216.113.35";
-    $username = "gknasln";
-    $password = "Gkndb3345";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
     $database = "notes";
     
     // Create connection

@@ -1,7 +1,10 @@
 <?php
-  $servername = "185.216.113.35";
-  $username = "gknasln";
-  $password = "Gkndb3345";
+  // $servername = "185.216.113.35";
+  $servername = "localhost";
+  $username = "root";
+  // $username = "gknasln";
+  $password = "";
+  // $password = "Gkndb3345";
   $dbname = "notes";
   
   // Create connection
