@@ -95,7 +95,7 @@
 }
 
 .active #third-right{
-  width: 77%;
+  width: 80%;
   border-radius: 0;
   transform: rotate(-48deg)
     translate(1px, 1px);
