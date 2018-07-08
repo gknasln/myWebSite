@@ -57,13 +57,42 @@
     <div class="google-map">
 
     </div>
-    <div class="informations">
-      <span>İletişim bilgileri</span>
-      <hr>
+    <div class="after-map"> 
+      <div class="informations">
+        <span style="font-family:'Oswald'; font-size: 18px; padding-left: 5px;">İLETİŞİM BİLGİLERİ</span>
+        <hr> 
+        <div>
+          <img src="./icons/phone.png" />
+          <span>(+90) 507 009 3558</span>
+        </div>
+        <div>
+          <img src="./icons/mail.png" />
+          <span>gokhan@gokhanaslan.com.tr</span>
+        </div>
+        <div>
+          <img src="./icons/signboard.png" />
+          <span>Gayrettepe Mh. Yıldız Posta Cd. 8 34 Beşiktaş/Istanbul</span>
+        </div>
+      </div>
+      <form action="">
+        <label for="name-field">İsim <red>*</red></label>
+        <input type="text" name="name-field" required/>
+        <label for="mail-field">E-Mail <red>*</red></label>
+        <input type="text" name="mail-field" required/>
+        <label for="name-field">Mesaj <red>*</red></label>
+        <textarea type="text" name="message-field" required> </textarea>
+        <input type="submit" value="Gönder" />
+      </form>
+      <script src="./../javascript/navScript.js"></script>
     </div>
-    <form action="">
-      
-    </form>
-    <script src="./../javascript/navScript.js"></script>
-</body>
+</body> 
+  <!--Load the API from the specified URL
+  * The async attribute allows the browser to render the page while the API loads
+  * The key parameter will contain your own API key (which is not needed for this tutorial)
+  * The callback parameter executes the initMap() function
+  -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF21G7jxHUDU90OHq4hbqYiyMPkKPlT9c&callback=initMap">
+  </script>
+  <script src="main.js"></script>
 </html>
