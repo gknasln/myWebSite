@@ -49,27 +49,3 @@
     margin-top: 20px;
     
   }
-
-  .content-button-container{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .content-button-container button{
-    width: 50px;
-    margin: 0 2px;   
-  }
-
-  #red-button{
-    background-color: red;
-  }
-
-  #blue-button{
-    background-color: blue;
-  }
-
-  #green-button{
-    background-color: green;
-  }
